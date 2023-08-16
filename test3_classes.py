@@ -30,3 +30,6 @@ if __name__ == "__main__":
     b1.print_vals()
     c1 = C(a=5, b=6)
     c1.print_vals()
+    print(hasattr(d1, 'b'))
+    setattr(c1, 'b', 4)
+    c1.print_vals()
