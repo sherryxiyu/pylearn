@@ -43,3 +43,15 @@ print(dicta)
 g = dicta.popitem()
 print(g)
 print(dicta)
+
+b = [('b', 8), ('a', 5), ('n', 3), ('y', 7), ('5', 2), ('o', 8)]
+b = sorted(b, key=lambda x: x[0])
+print(b)
+c = list(map(lambda x: x ** 2, [1, 2, 3, 4, 5]))
+print(c)
+
+e = [i ** 2 for i in [2, 3, 4, 5]]
+print(e)
+# 字典生成式:https://blog.csdn.net/qdPython/article/details/129346307
+f = {k: v for k, v in zip([2, 3, 4], [5, 6, 7])}
+print(f)

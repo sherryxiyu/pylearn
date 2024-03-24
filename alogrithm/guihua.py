@@ -21,3 +21,12 @@ class Solution2:
         for i in range(3, n+1):
             g[i] = g[i-1]+g[i-2]
         return g[-1]
+
+def rob(nums) -> int:
+    n = len(nums)
+    if n<2:
+        return nums[0]
+    cur, pre = nums[0], 0
+    for i in range(n-1):
+        cur, pre = max(cur, pre+nums[i+1]), cur
+    return cur

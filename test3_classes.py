@@ -10,7 +10,7 @@ class A:
 
 class B(A):
     def __init__(self):
-        super().__init__()
+        super().__init__(b=3)
         self.a = 9
 
 class C(A):

@@ -24,6 +24,10 @@ def test_except_else(cus_in):
     else:
         print("ahh,yes", cus_in)
 
+@pytest.mark.parametrize("test_input,expected", [("3+5", 8), ("2+4", 6), ("6*9", 42)])
+@pytest.mark.smoke
+def test_eval(test_input, expected):
+    assert eval(test_input) == expected
 
 if __name__ == "__main__":
     args = get_args().parse_args()
