@@ -5,6 +5,8 @@ lista.pop(4)
 print(lista)
 del lista[-1]
 print(lista)
+lista.insert(1, 4)
+print(lista)
 
 lista.append(['help', 'repair'])
 print(lista)

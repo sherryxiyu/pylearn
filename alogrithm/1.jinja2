@@ -1,0 +1,14 @@
+SET_ENV=1
+SET_ENV2=1
+
+VA_1 = {{ '{' }}
+    {%- for item in seq1 %}
+        {{ item }}
+    {%- endfor %}
+{{ '}' }}
+
+VA_2 = {{ '{' }}
+    {%- for item in seq2 %}
+        {{ item }}
+    {%- endfor %}
+{{ '}' }}

@@ -11,9 +11,9 @@ class TestThreads:
     def test_thread(self, autobench):
         threads = []
         for i in range(2):
-            threads.append(threading.Thread(target=self.send_msg, args=(autobench,)))
-        for item in threads:
-            item.start()
+            p = threading.Thread(target=self.send_msg, args=(autobench,))
+            threads.append(p)
+            p.start()
         for item in threads:
             item.join()
 

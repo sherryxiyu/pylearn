@@ -16,6 +16,7 @@ def printname(request):
 
 def pytest_addoption(parser):
     parser.addoption("--arch", action='store', default="npu-v1", help="selet v1 v2")
+    parser.addoption("--stringinput", action='append', default=[], help="parameterize input")
 
 @pytest.fixture(scope="session")
 def arch(request):

@@ -31,5 +31,8 @@ def test_case0803(arch):
     print(arch)
 
 
+def test_case0326(stringinput):
+    assert isinstance(stringinput, str)
+
 #to do:添加上传文件的用例
 #to do:尝试链接容器存储测试用例到redis
