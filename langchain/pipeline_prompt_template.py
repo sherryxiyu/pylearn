@@ -1,4 +1,4 @@
-from langchain.prompts.pipeline import PipelinePromptTemplate
+# from langchain.prompts.pipeline import PipelinePromptTemplate
 from langchain.prompts.prompt import PromptTemplate
 full_template = """
 {introduction}
