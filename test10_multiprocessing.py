@@ -21,9 +21,10 @@ def worker(n):
 
 def run_pool(nums):
     pool = mp.Pool(4)
-    pool.map(worker, nums)
+    a = pool.map(worker, nums)
     pool.close()
     pool.join()
+    print(a)
 
 def gen_lists(nums):
     with mp.Pool(processes=8) as pool:
@@ -32,8 +33,8 @@ def gen_lists(nums):
     return p
 
 if __name__ == "__main__":
-    # nums = [2, 3, 4]
+    nums = [2, 3, 4]
     # run_func(nums)
-    # run_pool(nums)
-    nums = [(3,), (4,)]
-    gen_lists(nums)
+    run_pool(nums)
+    # nums = [(3,), (4,)]
+    # gen_lists(nums)
