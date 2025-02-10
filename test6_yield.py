@@ -20,3 +20,7 @@ if __name__ == "__main__":
     print(a)
     d = [i for i in get_input(3)]
     print(d)
+    a = get_odds(10).__iter__()
+    print(a)
+    a = get_odds(10).__iter__()
+    print(a)
